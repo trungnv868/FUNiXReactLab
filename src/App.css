@@ -22,7 +22,7 @@
     color:floralwhite;
 }
 
-address{
+.address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
@@ -30,4 +30,11 @@ address{
 
 .navbar-dark {
     background-color: #512DA8;
+}
+.list_leader {
+    padding: 0.3rem 0;
+}
+.card-title {
+    font-size: 1.2em;
+    font-weight: 600;
 }
