@@ -77,12 +77,8 @@ class CommentForm extends Component {
 
   handleSubmit(values) {
     this.toggleModal();
-    this.props.addComment(
-      this.props.dishId,
-      values.rating,
-      values.author,
-      values.comment
-    );
+    
+    alert('Current State is: ' + JSON.stringify(values));
   }
   
   render() {
@@ -97,7 +93,7 @@ class CommentForm extends Component {
               <Row className="form-group">
                 <Label htmlFor="telnum" md={5}>Rating.</Label>
                   <Col md={{size: 12}}>
-                    <Control.select model=".contactType" name="contactType"
+                    <Control.select model=".rating" name="rating"
                       className="form-control">
                       <option>1</option>
                       <option>2</option>
